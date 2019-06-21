@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.scss'
+import './scss/App.scss'
+import Gallery from './js/Gallery';
 
-const title = "Gallery";
 
 ReactDOM.render(
-    <div>{title}</div>, 
+    <Gallery/>, 
     document.getElementById("root")
 )

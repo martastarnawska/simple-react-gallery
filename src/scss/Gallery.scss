@@ -1,0 +1,40 @@
+.Gallery {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+    color: white;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__button {
+        width: 80px;
+        height: 30px;
+        margin: 30px;
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        border: 2px solid white;
+        transition: all .5s;
+
+        &:hover:enabled {
+            cursor: pointer;
+            color: black;
+            background-color: white;
+        }
+    }
+
+    @media screen and (min-width : 650px) {
+        &__wrapper {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}

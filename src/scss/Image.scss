@@ -1,0 +1,12 @@
+.Image {
+    width: calc(100vw * .9);
+    height: calc(100vw * .6);
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+
+    @media screen and (min-width : 650px) {
+        width: calc(100vw * .3);
+        height: calc(100vw * .2);  
+    }
+}
